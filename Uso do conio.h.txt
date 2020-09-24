@@ -1,0 +1,14 @@
+5
+
+O getch() como também o getche() retorna a tecla digitada, muito usado em menus com switch.(Diferença entre os dois é que o getch() não mostra a tecla que digitou na tela, já o getche() mostra na tela qual foi a tecla digitada)
+
+Arquivos com extensão .h não são bibliotecas, mas arquivos de cabeçalho onde, entre outras coisas, se encontram os protótipos das funções utilizadas.
+
+conio.h é para desenhar tela, e é para dos/windows (as funções do conio são úteis para manipular caracteres na tela, especificar cor de carácter e de fundo.)
+
+Agora você deve estar se perguntando:
+Mas quais funções eu poderei usar com conio.h e qual a relação com o getch()?
+
+As funções tipicas utilizadas com o conio.h são clrscr(para limpar a tela), gotoxy(posiciona o cursor na tela nas coordenadas x e y), getch(lê um carácter do teclado e não o mostra na tela), kbhit(testa se alguma tecla foi apertada, é necessário usar o comando getch ou getche antes), delline(apaga a linha que contem o cursor e move todas as linhas abaixo dela uma linha para cima), textcolor(muda a cor do texto), textbackground(muda a cor do fundo), cprintf (utilizada para imprimir na tela textos coloridos, é necessário especificar a cor usando a função textcolor).
+
+No caso do seu código o emprego do conio foi por causa do emprego do getch() que é o maior responsável pela utilização da biblioteca. Os outros comandos geralmente você pode usar o comando system() que irá utilizar comando DOS para as mesmas finalidades.
